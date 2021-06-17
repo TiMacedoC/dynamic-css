@@ -13,35 +13,40 @@
     <script src="script.js"></script>
 
     <div id="container">
+
         <h1>Dynamic CSS</h1>
 
-        <h2>Size</h2>
-        <input type="range" name="size" id="slider" min="10" max="300" value="100"
-            oninput="changeValue('size', this.value)">
+        <div id="columnItens">
 
-        <h2>Radius</h2>
-        <input type="range" name="radius" id="slider" min="0" max="50" value="0"
-            oninput="changeValue('radius', this.value)">
-
-        <div id="colorSelector">
-            <h2 id="colorText">Color:</h2>
-
-            <div id="buttons">
-                <div class="eachButton" style="background-color: aquamarine;"></div>
-                <div class="eachButton" style="background-color: aquamarine;"></div>
-                <div class="eachButton" style="background-color: aquamarine;"></div>
-                <div class="eachButton" style="background-color: aquamarine;"></div>
-                <div class="eachButton" style="background-color: aquamarine;"></div>
-                <div class="eachButton" style="background-color: aquamarine;"></div>
-                <div class="eachButton" style="background-color: aquamarine;"></div>
-                <div class="eachButton" style="background-color: aquamarine;"></div>
+            <div id='alltext'>
+                <h2>Size:</h2>
+                <h2>Radius:</h2>
+                <h2 id="colorText">Color:</h2>
             </div>
+
+            <div id="selectors">
+                <input type="range" name="size" id="slider" min="10" max="300" value="100"
+                    oninput="changeValue('size', this.value)">
+                <input type="range" name="radius" id="slider" min="0" max="50" value="0"
+                    oninput="changeValue('radius', this.value)">
+                <div id="buttons">
+                    <div class="eachButton" style="background-color: aquamarine;"></div>
+                    <div class="eachButton" style="background-color: aquamarine;"></div>
+                    <div class="eachButton" style="background-color: aquamarine;"></div>
+                    <div class="eachButton" style="background-color: aquamarine;"></div>
+                    <div class="eachButton" style="background-color: aquamarine;"></div>
+                    <div class="eachButton" style="background-color: aquamarine;"></div>
+                    <div class="eachButton" style="background-color: aquamarine;"></div>
+                    <div class="eachButton" style="background-color: aquamarine;"></div>
+                </div>
+            </div>
+
         </div>
 
         <div id="box"></div>
-
-
     </div>
+
+
 
 </body>
 

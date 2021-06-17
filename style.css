@@ -11,20 +11,37 @@ body{
 }
 
 #container {
-    height: 667px;
+    height: 600px;
     width: 400px;
     background-color: rgb(212, 212, 212);
     
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+div#columnItens {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
 
+div#alltext {
+    text-align: end;
+}
+
+div#selectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: px;
+    
 }
 
 #slider {
-    margin-top: -20px;
     width: 197px;
+    margin-top: 10px;
+    margin-bottom: 22px;
 }
 
 #slider::-webkit-slider-thumb {
@@ -43,10 +60,10 @@ body{
     background-color: var(--color);
 }
 
-div#colorSelector {
+div#selectors {
     margin-top: 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
 }
@@ -60,6 +77,7 @@ div#buttons {
     width: 197px;
     height: 59px;
     
+    margin-top: 2px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
