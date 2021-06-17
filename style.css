@@ -1,0 +1,78 @@
+:root {
+    --radius: 0;
+    --size: 100px;
+    --color: #8400ff;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#container {
+    height: 667px;
+    width: 400px;
+    background-color: rgb(212, 212, 212);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#slider {
+    margin-top: -20px;
+    width: 197px;
+}
+
+#slider::-webkit-slider-thumb {
+    cursor: grab;
+}
+
+#slider::-webkit-slider-thumb:active {
+    cursor: grabbing;
+}
+
+#box {
+    margin-top: 30px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--radius);
+    background-color: var(--color);
+}
+
+div#colorSelector {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+h2#colorText {
+    margin-top: 0;
+}
+
+div#buttons {
+    background-color: #aaaaaa;
+    width: 197px;
+    height: 59px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+}
+
+
+.eachButton {
+    margin: 1px;
+    width: 45px;
+    height: 25px;
+    border: 1px solid black
+}
